@@ -1,0 +1,23 @@
+{
+    "version": "1.0",
+    "type": "entity",
+    "tag": "dtcp.schema.type",
+    "object": {
+        "type": "entity",
+        "extends": "object",
+        "fields": [
+            {
+                "name": "title",
+                "type": "string",
+                "optional": false,
+                "description": "Entity title."
+            },
+            {
+                "name": "description",
+                "type": "string",
+                "optional": false,
+                "description": "Entity description."
+            }
+        ]
+    }
+}
