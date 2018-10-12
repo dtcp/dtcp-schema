@@ -1,0 +1,98 @@
+{
+    "version": "1.0",
+    "type": "entity",
+    "tag": "dtcp.schema.type",
+    "object": {
+        "type": "object",
+        "extends": null,
+        "fields": [
+            {
+                "name": "version",
+                "type": "integer",
+                "optional": false,
+                "description": "DTCP version."
+            },
+            {
+                "name": "type",
+                "type": "enum",
+                "optional": false,
+                "description": "Object type.",
+                "values": [
+                    "entity",
+                    "link"
+                ]
+            },
+            {
+                "name": "tag",
+                "type": "string",
+                "optional": false,
+                "description": "Object name."
+            },
+            {
+                "name": "created",
+                "type": "integer",
+                "optional": false,
+                "description": "Object creation time. Unix timestamp."
+            },
+            {
+                "name": "updated",
+                "type": "integer",
+                "optional": true,
+                "description": "Object latest update time. Unix timestamp."
+            },
+            {
+                "name": "status",
+                "type": "enum",
+                "optional": false,
+                "description": "Object update status.",
+                "values": [
+                    "created",
+                    "updated",
+                    "deleted"
+                ]
+            },
+            {
+                "name": "dna",
+                "type": "string",
+                "optional": false,
+                "description": "Object DNA."
+            },
+            {
+                "name": "parent_dna",
+                "type": "string",
+                "optional": true,
+                "description": "Parent object DNA."
+            },
+            {
+                "name": "id",
+                "type": "string",
+                "optional": true,
+                "description": "Object ID."
+            },
+            {
+                "name": "creator",
+                "type": "entity_id",
+                "optional": false,
+                "description": "Creator of this object."
+            },
+            {
+                "name": "extra",
+                "type": "map",
+                "optional": true,
+                "description": "Customizable extra fields."
+            },
+            {
+                "name": "signature",
+                "type": "string",
+                "optional": false,
+                "description": "Signature of the object creator."
+            },
+            {
+                "name": "transaction",
+                "type": "entity_id",
+                "optional": true,
+                "description": "Blockchain transaction recording this object."
+            }
+        ]
+    }
+}

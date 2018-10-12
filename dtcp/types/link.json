@@ -1,0 +1,23 @@
+{
+    "version": "1.0",
+    "type": "entity",
+    "tag": "dtcp.schema.type",
+    "object": {
+        "type": "link",
+        "extends": "object",
+        "fields": [
+            {
+                "name": "src",
+                "type": "entity_id",
+                "optional": false,
+                "description": "Source entity."
+            },
+            {
+                "name": "dest",
+                "type": "entity_id",
+                "optional": false,
+                "description": "Destination entity."
+            }
+        ]
+    }
+}

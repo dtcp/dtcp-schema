@@ -1,0 +1,12 @@
+{
+    "version": "1.0",
+    "type": "entity",
+    "tag": "dtcp.schema.object",
+    "object": {
+        "type": "entity",
+        "tag": "content.article",
+        "fields": [
+
+        ]
+    }
+}
